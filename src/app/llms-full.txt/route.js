@@ -9,7 +9,7 @@ function buildContent() {
   lines.push('# HomeRepairPro — Full Reference');
   lines.push('');
   lines.push('> HomeRepairPro is a doorstep home-appliance repair company serving Indore and');
-  lines.push('> Bhopal, Madhya Pradesh, India. 15+ years experience, 60-minute response,');
+  lines.push('> Bhopal, Madhya Pradesh, India. Experienced technicians, 60-minute response,');
   lines.push('> ₹350 starting price, 30-day repair warranty, GST & MSME registered,');
   lines.push('> verified technicians. Phone: +91 8889539174.');
   lines.push('');

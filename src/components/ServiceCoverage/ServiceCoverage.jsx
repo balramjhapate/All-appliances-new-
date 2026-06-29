@@ -8,7 +8,7 @@ const featuredCities = [
     slug: 'indore',
     areas: '36+',
     response: '30 Min',
-    repairs: '3,000+',
+    warranty: '30-Day',
     highlight: 'Indore ka #1 AC & Appliance Repair',
     color: 'from-blue-600 to-blue-800',
     accent: '#1B4FD8',
@@ -17,7 +17,7 @@ const featuredCities = [
     slug: 'bhopal',
     areas: '35+',
     response: '30 Min',
-    repairs: '2,000+',
+    warranty: '30-Day',
     highlight: 'Bhopal mein Same-Day Service',
     color: 'from-orange-500 to-orange-700',
     accent: '#F97316',
@@ -106,7 +106,7 @@ export default function ServiceCoverage() {
                       {[
                         { val: fc.areas,    label: 'Areas'    },
                         { val: fc.response, label: 'Response' },
-                        { val: fc.repairs,  label: 'Repairs'  },
+                        { val: fc.warranty, label: 'Warranty' },
                       ].map(({ val, label }) => (
                         <div key={label} className="text-center bg-gray-50 rounded-xl py-3 border border-gray-100 hover:border-gray-300 transition-colors">
                           <p className="text-base md:text-lg font-black text-gray-900 leading-tight">{val}</p>

@@ -50,7 +50,7 @@ const PROBLEMS = [
 ];
 
 const WHY_US = [
-  { icon: '🏆', title: '15+ Years Experience', desc: 'Bhopal ka apna trusted technician, faceless company nahi' },
+  { icon: '🏆', title: 'Experienced Technicians', desc: 'Bhopal ka apna trusted technician, faceless company nahi' },
   { icon: '⚡', title: '60 Min Response', desc: 'Call karo, ghar pe technician same day' },
   { icon: '💰', title: '₹350 Transparent Pricing', desc: 'Pehle estimate, no hidden charge kabhi nahi' },
   { icon: '🛡️', title: '30-Day Warranty', desc: 'Same problem dobara aaye toh free fix' },
@@ -165,7 +165,7 @@ export default function WashingMachineRepairBhopalLP() {
             {/* 3. Subhead + chips + CTA below form */}
             <div className="px-5 pt-5 pb-6 text-white">
               <p className="text-blue-100 text-sm leading-relaxed mb-4">
-                Spin nahi ho raha, paani nahi nikal raha, ya drum/motor problem — Bhopal ka 15+ saal experienced technician same day.{' '}
+                Spin nahi ho raha, paani nahi nikal raha, ya drum/motor problem — Bhopal ka experienced technician same day.{' '}
                 <strong className="text-white">Pehle price, phir kaam.</strong>
               </p>
               <div className="flex flex-wrap gap-1.5 mb-4">
@@ -215,7 +215,7 @@ export default function WashingMachineRepairBhopalLP() {
                 </h1>
 
                 <p className="text-white/75 text-sm mb-6 max-w-lg leading-relaxed">
-                  Spin nahi ho raha, paani nahi nikal raha ya drum/motor problem — Bhopal ka 15+ saal experienced technician aapke ghar, same day. Pehle price, phir kaam.
+                  Spin nahi ho raha, paani nahi nikal raha ya drum/motor problem — Bhopal ka experienced technician aapke ghar, same day. Pehle price, phir kaam.
                 </p>
 
                 <div className="flex items-center gap-8">
@@ -338,7 +338,7 @@ export default function WashingMachineRepairBhopalLP() {
           <div>
             <h2 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-3">Bhopal Ka Apna Trusted Technician</h2>
             <p className="text-gray-600 leading-relaxed mb-5 text-sm md:text-base">
-              15+ saal se Bhopal mein ghar ghar jaake washing machine repair karte hain. LG, Samsung, IFB, Whirlpool — sab brands mein expert.
+              Bhopal mein ghar ghar jaake washing machine repair karte hain. LG, Samsung, IFB, Whirlpool — sab brands mein expert.
             </p>
             <div className="grid grid-cols-2 gap-3">
               {['GST invoice dete hain', '30-day warranty', 'Original spare parts', 'Transparent pricing'].map((item) => (
@@ -408,56 +408,21 @@ export default function WashingMachineRepairBhopalLP() {
       </section>
 
       {/* ── REVIEWS ── */}
-      <section className="py-10 md:py-16 bg-gray-50 border-t border-gray-100">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
-              Washing Machine Repair Customers Ka Kehna
-            </h2>
-            <a
-              href="https://share.google/BE2ReHesatm7UhRpl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-3 bg-white border border-gray-200 hover:border-yellow-400 rounded-full px-4 py-1.5 shadow-sm transition-all"
-            >
-              <GoogleIcon />
-              <span className="text-yellow-400 text-sm">★★★★★</span>
-              <span className="text-sm font-semibold text-gray-700">Read Our Google Reviews</span>
-            </a>
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            {REVIEWS.map((r, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 relative overflow-hidden">
-                <div className="absolute top-3 right-4 text-6xl text-gray-100 font-serif leading-none select-none">"</div>
-                <div className="flex items-center gap-2 mb-3">
-                  <GoogleIcon />
-                  <span className="text-yellow-400 text-sm">★★★★★</span>
-                  <span className="text-xs text-gray-400 font-medium">Google</span>
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed mb-5 relative z-10">"{r.text}"</p>
-                <div className="flex items-center gap-3 border-t border-gray-100 pt-4">
-                  <div className="w-10 h-10 rounded-full bg-[#1B4FD8] text-white text-sm font-bold flex items-center justify-center flex-shrink-0">
-                    {r.name[0]}
-                  </div>
-                  <div>
-                    <p className="font-bold text-gray-900 text-sm">{r.name}</p>
-                    <p className="text-xs text-gray-400">{r.area} · Verified Customer</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-6">
-            <a
-              href="https://share.google/BE2ReHesatm7UhRpl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white border border-gray-200 hover:border-gray-400 text-gray-700 font-semibold text-sm px-6 py-3 rounded-xl shadow-sm transition-all"
-            >
-              <GoogleIcon />
-              Saare Google Reviews Padho
-            </a>
-          </div>
+      <section className="py-10 md:py-14 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+            Hamare Customers Ki Rai
+          </h2>
+          <p className="text-gray-500 text-sm mb-6">Genuine reviews Google pe — directly verify karo.</p>
+          <a
+            href="https://share.google/BE2ReHesatm7UhRpl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-white border border-gray-200 hover:border-blue-400 rounded-xl px-6 py-4 shadow-sm transition-all"
+          >
+            <GoogleIcon />
+            <span className="text-sm font-semibold text-gray-700">Read Our Google Reviews</span>
+          </a>
         </div>
       </section>
 

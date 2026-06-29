@@ -9,7 +9,6 @@ import FAQ from '@/components/FAQ/FAQ';
 import LeadForm from '@/components/LeadForm/LeadForm';
 import ServiceCoverage from '@/components/ServiceCoverage/ServiceCoverage';
 import CustomerReviews from '@/components/CustomerReviews/CustomerReviews';
-import CertifiedProjects from '@/components/CertifiedProjects/CertifiedProjects';
 import WhatsAppIcon from '@/components/common/WhatsAppIcon';
 import WhatsAppGroupCTA from '@/components/common/WhatsAppGroupCTA';
 import { FadeUp, SlideInLeft, SlideInRight, StaggerList, StaggerItem } from '@/components/common/AnimateIn';
@@ -124,7 +123,7 @@ export default function Home() {
               Hume Kyun Choose Karein?
             </h2>
             <div className="w-14 h-1 bg-[#F97316] rounded-full mx-auto mb-3" />
-            <p className="text-gray-500 text-xs sm:text-sm">Urban Company se fast, local se affordable — koi middleman nahi</p>
+            <p className="text-gray-500 text-xs sm:text-sm">Fast, affordable aur local — koi middleman nahi</p>
           </FadeUp>
 
           <StaggerList className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
@@ -192,7 +191,6 @@ export default function Home() {
       <CustomerReviews />
 
       {/* ══ CERTIFIED PROJECTS ══ */}
-      <CertifiedProjects />
 
       <section className="py-10 sm:py-16 bg-gradient-to-br from-[#1B4FD8] via-[#2563EB] to-[#1d40b0] relative overflow-hidden" id="book">
         <div className="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none" />

@@ -185,7 +185,7 @@ export default async function ServiceCityPage({ params }) {
           <h2 className="text-xl font-black text-gray-900 mb-4">HomeRepairPro Ko Kyun Choose Karein?</h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { icon: '🏆', label: '15+ Saal', sub: 'Experience' },
+              { icon: '🏆', label: 'Experienced', sub: 'Technicians' },
               { icon: '✅', label: 'Verified', sub: 'Technicians' },
               { icon: '🧾', label: 'GST Invoice', sub: 'Har service pe' },
               { icon: '🛡️', label: '30-Day Warranty', sub: 'Repair guarantee' },

@@ -104,11 +104,11 @@ export default function AboutSection() {
               {/* Floating Experience Card */}
               <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md shadow-lg rounded-2xl px-4 py-3">
                 <h4 className="text-xl font-black text-[#F97316]">
-                  10+
+                  GST
                 </h4>
 
                 <p className="text-xs text-gray-500">
-                  Years Experience
+                  Invoice Included
                 </p>
               </div>
 

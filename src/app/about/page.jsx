@@ -7,7 +7,7 @@ import { IMG_ABOUT_TECH } from '@/utils/cdn';
 
 export const metadata = {
   title: 'About Us — HomeRepairPro | GST & MSME Registered',
-  description: 'HomeRepairPro — 5+ years experience, 50+ verified technicians. GST & MSME registered independent appliance repair service in Indore, Bhopal & 8 cities.',
+  description: 'HomeRepairPro — experienced technicians, 50+ team. GST & MSME registered independent appliance repair service in Indore, Bhopal & 8 cities.',
   alternates: { canonical: 'https://homerepairpro.in/about' },
 };
 
@@ -24,7 +24,7 @@ export default function AboutPage() {
           About HomeRepairPro
         </h1>
         <p className="text-white/80 max-w-xl mx-auto">
-          Central India&apos;s most trusted home appliance repair service — GST & MSME registered, serving since 2019.
+          Central India&apos;s independent home appliance repair service — GST & MSME registered, serving Indore, Bhopal &amp; 8 cities.
         </p>
       </section>
 

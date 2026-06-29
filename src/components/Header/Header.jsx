@@ -146,10 +146,9 @@ export default function Header({ headerTop = 40, translateY = 0 }) {
           >
             📞
           </button>
-          <a
-            href="#"
-            role="button"
-            onClick={(e) => { e.preventDefault(); setMenuOpen((v) => !v); }}
+          <button
+            type="button"
+            onClick={() => setMenuOpen((v) => !v)}
             className="w-10 h-10 flex flex-col items-center justify-center gap-[5px] rounded-xl bg-gray-100 border border-gray-200 flex-shrink-0 cursor-pointer select-none hover:bg-gray-200 transition-colors"
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
@@ -157,7 +156,7 @@ export default function Header({ headerTop = 40, translateY = 0 }) {
             <span className={`block h-[2px] w-6 bg-gray-700 rounded transition-all duration-300 origin-center ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
             <span className={`block h-[2px] w-5 bg-gray-700 rounded transition-all duration-300 ${menuOpen ? 'opacity-0 scale-x-0' : ''}`} />
             <span className={`block h-[2px] w-6 bg-gray-700 rounded transition-all duration-300 origin-center ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
-          </a>
+          </button>
         </div>
       </div>
 
