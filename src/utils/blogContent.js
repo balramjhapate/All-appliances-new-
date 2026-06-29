@@ -155,7 +155,9 @@ export const blogContent = [
         },
         {
           heading: 'Fake Companies Se Kaise Bachein',
-          body: 'Bahut companies hain jo ₹99-199 mein service offer karti hain — yeh "free service" nahi hoti, yeh bait hai. Aake overcharge karte hain. Warning signs: No GST invoice, no fixed price list, pressure for unnecessary parts, no warranty on service. HomeRepairPro mein: Fixed prices, GST invoice, 30-day warranty. Call karo: +91 88895 39174.',
+          // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+          // body: 'Bahut companies hain jo ₹99-199 mein service offer karti hain — yeh "free service" nahi hoti, yeh bait hai. Aake overcharge karte hain. Warning signs: No GST invoice, no fixed price list, pressure for unnecessary parts, no warranty on service. HomeRepairPro mein: Fixed prices, GST invoice, 30-day warranty. Call karo: +91 88895 39174.',
+          body: 'Bahut companies hain jo ₹99-199 mein service offer karti hain — yeh "free service" nahi hoti, yeh bait hai. Aake overcharge karte hain. Warning signs: No proper bill, no fixed price list, pressure for unnecessary parts, no warranty on service. HomeRepairPro mein: Fixed prices, proper bill/receipt, 30-day warranty. Call karo: +91 88895 39174.',
         },
         {
           heading: 'Service Cost Kitni Honestly Expect Karein',
@@ -163,8 +165,10 @@ export const blogContent = [
         },
       ],
       faqs: [
-        { q: 'Indore mein best AC service company kaun si hai?', a: 'HomeRepairPro Indore mein ek trusted naam hai — same day service, GST invoice, fixed pricing. Call: +91 88895 39174.' },
-        { q: 'AC service se pehle kya check karein?', a: 'Company ka GST number, reviews, price list pehle maango. Work order/bill milta hai ya nahi yeh confirm karo.' },
+        // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+        // { q: 'Indore mein best AC service company kaun si hai?', a: 'HomeRepairPro Indore mein ek trusted naam hai — same day service, GST invoice, fixed pricing. Call: +91 88895 39174.' },
+        { q: 'Indore mein best AC service company kaun si hai?', a: 'HomeRepairPro Indore mein ek trusted naam hai — same day service, transparent pricing. Call: +91 88895 39174.' },
+        { q: 'AC service se pehle kya check karein?', a: 'Company ka reviews, price list pehle maango. Work order/bill milta hai ya nahi yeh confirm karo.' },
         { q: 'Window AC ki service split AC se alag hoti hai?', a: 'Process thodi alag hai lekin cost similar hai. Window AC thoda easier hai access ke liye.' },
         { q: 'New AC installation Indore mein kitne mein hoti hai?', a: 'Standard installation ₹1,200-2,000. Agar copper pipe extension, extra fitting chahiye toh ₹500-1,500 extra.' },
         { q: 'AC gas refill ke baad warranty milti hai?', a: 'HomeRepairPro pe haan — 30-day warranty. Agar gas phir leak ho toh free service.' },

@@ -1,10 +1,13 @@
 export const dynamic = 'force-static';
 
+// GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+// Removed from served content: '> ₹350 starting price, 30-day repair warranty, GST & MSME registered,'
+
 const CONTENT = `# HomeRepairPro
 
 > HomeRepairPro is a doorstep home-appliance repair company serving Indore and
 > Bhopal, Madhya Pradesh, India. Experienced technicians, 60-minute response,
-> ₹350 starting price, 30-day repair warranty, GST & MSME registered,
+> ₹350 starting price, 30-day repair warranty,
 > verified technicians. Phone: +91 8889539174.
 
 ## Services

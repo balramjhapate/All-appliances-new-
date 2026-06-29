@@ -5,9 +5,12 @@ import { cities, services } from '@/utils/data';
 import { localBusinessSchema } from '@/utils/schema';
 import { IMG_ABOUT_TECH } from '@/utils/cdn';
 
+// GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+// title: 'About Us — HomeRepairPro | GST & MSME Registered',
+// description: 'HomeRepairPro — experienced technicians, 50+ team. GST & MSME registered independent appliance repair service in Indore, Bhopal & 8 cities.',
 export const metadata = {
-  title: 'About Us — HomeRepairPro | GST & MSME Registered',
-  description: 'HomeRepairPro — experienced technicians, 50+ team. GST & MSME registered independent appliance repair service in Indore, Bhopal & 8 cities.',
+  title: 'About Us — HomeRepairPro | Appliance Repair Indore & Bhopal',
+  description: 'HomeRepairPro — experienced technicians, 50+ team. Independent appliance repair service in Indore, Bhopal & 8 cities.',
   alternates: { canonical: 'https://homerepairpro.in/about' },
 };
 
@@ -24,7 +27,9 @@ export default function AboutPage() {
           About HomeRepairPro
         </h1>
         <p className="text-white/80 max-w-xl mx-auto">
-          Central India&apos;s independent home appliance repair service — GST & MSME registered, serving Indore, Bhopal &amp; 8 cities.
+          {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+          {/* Central India&apos;s independent home appliance repair service — GST & MSME registered, serving Indore, Bhopal &amp; 8 cities. */}
+          Central India&apos;s independent home appliance repair service — serving Indore, Bhopal &amp; 8 cities.
         </p>
       </section>
 
@@ -100,8 +105,12 @@ export default function AboutPage() {
               <p className="text-gray-600 mb-4 leading-relaxed">
                 Aaj hum Indore, Bhopal, Ujjain, Jabalpur, Jaipur aur 5 aur cities mein 50+ verified technicians ke saath service de rahe hain. Har technician background-verified aur trained hai.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* <p className="text-gray-600 leading-relaxed">
                 Hum GST registered business hain (GST No: 23DNCPG4775E14H) aur Udyam (MSME) registered hain (Udyam No: UDYAM-MP-10-0042011). Har repair ke baad proper GST invoice milti hai.
+              </p> */}
+              <p className="text-gray-600 leading-relaxed">
+                Har repair ke baad proper bill/receipt milti hai. Transparent pricing — koi hidden charge nahi.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden">
@@ -124,9 +133,12 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-3 sm:px-4">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">Legal & Certifications</h2>
           <div className="grid grid-cols-2 md:grid-cols-2 gap-3 sm:gap-5">
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* { icon: '📋', title: 'GST Registered', detail: 'GST No: 23DNCPG4775E14H — Har service pe proper GST invoice milti hai.' }, */}
+            {/* { icon: '🏛️', title: 'MSME Registered', detail: 'Udyam No: UDYAM-MP-10-0042011 — Government recognized small business.' }, */}
             {[
-              { icon: '📋', title: 'GST Registered', detail: 'GST No: 23DNCPG4775E14H — Har service pe proper GST invoice milti hai.' },
-              { icon: '🏛️', title: 'MSME Registered', detail: 'Udyam No: UDYAM-MP-10-0042011 — Government recognized small business.' },
+              { icon: '🧾', title: 'Proper Bill Provided', detail: 'Har service ke baad proper bill/receipt milti hai. Transparent pricing guaranteed.' },
+              { icon: '📍', title: 'Local & Independent', detail: 'HomeRepairPro ek independent service hai — kisi manufacturer se affiliated nahi.' },
               { icon: '✅', title: 'Verified Technicians', detail: 'Sab technicians background-verified aur professionally trained hain.' },
               { icon: '🛡️', title: '30-Day Warranty', detail: 'Har repair pe 30-day warranty — same problem dobara aaye toh free fix.' },
             ].map((item) => (
@@ -166,7 +178,9 @@ export default function AboutPage() {
             HomeRepairPro corporate offices aur institutional clients ko bhi AMC (Annual Maintenance Contract) aur bulk repair services provide karta hai. Humari team large-scale deployments handle kar sakti hai.
           </p>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            B2B clients ke liye purchase order, work order, GST invoice sab properly maintained karte hain. Rate card ke liye contact karo.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* B2B clients ke liye purchase order, work order, GST invoice sab properly maintained karte hain. Rate card ke liye contact karo. */}
+            B2B clients ke liye purchase order, work order, proper bill sab maintained karte hain. Rate card ke liye contact karo.
           </p>
           <a
             href="/contact"

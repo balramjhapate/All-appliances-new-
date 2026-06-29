@@ -8,9 +8,10 @@ function LpFooter() {
     <footer className="bg-gray-900 text-white py-5 text-center">
       <div className="max-w-4xl mx-auto px-4">
         <p className="font-semibold text-sm">HomeRepairPro · Bhopal, Madhya Pradesh</p>
-        <p className="text-gray-400 text-xs mt-1">
+        {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+        {/* <p className="text-gray-400 text-xs mt-1">
           GST: 23DNCPG4775E14H · MSME: UDYAM-MP-10-0042011
-        </p>
+        </p> */}
         <div className="flex gap-3 justify-center mt-3">
           <a
             href="tel:+918889539174"

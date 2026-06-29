@@ -108,7 +108,9 @@ export default function BrandServicePage({ service, brand }) {
     },
     {
       q: `${brand} ${service.name} ke baad warranty milti hai?`,
-      a: `Haan! Har ${service.name} pe 30-day service warranty milti hai. Same problem dobara aaye toh free service milegi — koi extra charge nahi. GST invoice bhi milti hai har service pe.`,
+      // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+      // a: `Haan! Har ${service.name} pe 30-day service warranty milti hai. Same problem dobara aaye toh free service milegi — koi extra charge nahi. GST invoice bhi milti hai har service pe.`,
+      a: `Haan! Har ${service.name} pe 30-day service warranty milti hai. Same problem dobara aaye toh free service milegi — koi extra charge nahi. Proper bill/receipt milti hai har service pe.`,
     },
   ];
 
@@ -143,7 +145,9 @@ export default function BrandServicePage({ service, brand }) {
           </h1>
 
           <p className="text-white/70 text-sm md:text-base mb-6 max-w-xl leading-relaxed">
-            Expert {brand} {service.name} in Bhopal, Indore &amp; all MP cities. Certified technicians, genuine parts, GST invoice &amp; 30-day warranty. Starting ₹{service.price}.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* Expert {brand} {service.name} in Bhopal, Indore &amp; all MP cities. Certified technicians, genuine parts, GST invoice &amp; 30-day warranty. Starting ₹{service.price}. */}
+            Expert {brand} {service.name} in Bhopal, Indore &amp; all MP cities. Certified technicians, genuine parts &amp; 30-day warranty. Starting ₹{service.price}.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
@@ -272,7 +276,9 @@ export default function BrandServicePage({ service, brand }) {
               2019 se hum Bhopal, Indore, Ujjain, Jabalpur aur aur bhi cities mein hazaron {brand} appliances fix kar chuke hain. Same day service guarantee — subah call karo, dopahar tak technician ghar pe.
             </p>
             <p>
-              Transparent pricing — service shuru karne se pehle poora estimate de dete hain. Koi hidden charges nahi. Har kaam pe GST invoice aur 30-day warranty milti hai.
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* Transparent pricing — service shuru karne se pehle poora estimate de dete hain. Koi hidden charges nahi. Har kaam pe GST invoice aur 30-day warranty milti hai. */}
+              Transparent pricing — service shuru karne se pehle poora estimate de dete hain. Koi hidden charges nahi. Har kaam pe proper bill/receipt aur 30-day warranty milti hai.
             </p>
           </div>
         </div>

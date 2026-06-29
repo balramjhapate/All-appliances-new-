@@ -57,8 +57,9 @@ export function localBusinessSchema() {
     },
     priceRange: '₹₹',
     openingHours: 'Mo-Su 08:00-20:00',
-    taxID: '23DNCPG4775E14H',
-    identifier: 'UDYAM-MP-10-0042011',
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // taxID: '23DNCPG4775E14H',
+    // identifier: 'UDYAM-MP-10-0042011',
     sameAs: SOCIAL_PROFILES,
   };
 }
@@ -80,7 +81,9 @@ export function servicePageSchema(service, city, url) {
       name: city,
     },
     url,
-    description: `Professional ${service} in ${city} by verified technicians. Same day service, starting ₹350. GST & MSME registered.`,
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // description: `Professional ${service} in ${city} by verified technicians. Same day service, starting ₹350. GST & MSME registered.`,
+    description: `Professional ${service} in ${city} by verified technicians. Same day service, starting ₹350.`,
   };
 }
 
@@ -149,7 +152,8 @@ export function lpLocalBusinessSchema({ city, service, url }) {
       itemListElement: [{ '@type': 'Offer', itemOffered: { '@type': 'Service', name: service } }],
     },
     openingHours: 'Mo-Su 08:00-20:00',
-    taxID: '23DNCPG4775E14H',
-    identifier: 'UDYAM-MP-10-0042011',
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // taxID: '23DNCPG4775E14H',
+    // identifier: 'UDYAM-MP-10-0042011',
   };
 }

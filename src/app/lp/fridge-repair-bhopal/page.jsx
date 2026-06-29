@@ -66,7 +66,9 @@ const PRICING = [
 const STEPS = [
   { title: 'Call / WhatsApp', desc: '2 min mein problem batao, free estimate lo' },
   { title: '60 Min Mein Technician', desc: 'Bhopal ke kisi bhi area mein same day' },
-  { title: 'Repair + Warranty', desc: 'GST invoice + 30-day warranty guaranteed' },
+  // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+  // { title: 'Repair + Warranty', desc: 'GST invoice + 30-day warranty guaranteed' },
+  { title: 'Repair + Warranty', desc: 'Proper bill + 30-day warranty guaranteed' },
 ];
 
 const BRANDS = ['LG', 'Samsung', 'Whirlpool', 'Godrej', 'Haier', 'Panasonic', 'Bosch', 'Videocon', 'Voltas Beko'];
@@ -78,7 +80,9 @@ const REVIEWS = [
     area: 'Kolar, Bhopal',
   },
   {
-    text: 'Double door fridge ki gas khatam thi. Pehle estimate bataya phir kaam — ₹1500 fair price, GST invoice bhi mili. Bhopal mein itni honest service mushkil hai.',
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // text: 'Double door fridge ki gas khatam thi. Pehle estimate bataya phir kaam — ₹1500 fair price, GST invoice bhi mili. Bhopal mein itni honest service mushkil hai.',
+    text: 'Double door fridge ki gas khatam thi. Pehle estimate bataya phir kaam — ₹1500 fair price. Bhopal mein itni honest service mushkil hai.',
     name: 'Sunita Verma',
     area: 'Arera Colony, Bhopal',
   },
@@ -92,7 +96,9 @@ const FAQS = [
   { q: 'Bhopal ke kaunse area cover karte ho?', a: 'Kolar, MP Nagar, Arera Colony, Awadhpuri, Bairagarh, Katara Hills aur poora Bhopal.' },
 ];
 
-const TRUST_CHIPS = ['⚡ 60 Min Doorstep', '💰 ₹350 se Shuru', '🛡️ 30-Day Warranty', '🧾 GST Invoice'];
+// GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+// const TRUST_CHIPS = ['⚡ 60 Min Doorstep', '💰 ₹350 se Shuru', '🛡️ 30-Day Warranty', '🧾 GST Invoice'];
+const TRUST_CHIPS = ['⚡ 60 Min Doorstep', '💰 ₹350 se Shuru', '🛡️ 30-Day Warranty', '🧾 Proper Bill'];
 
 function ld(schema) {
   return JSON.stringify(schema).replace(/</g, '\\u003c');
@@ -339,7 +345,9 @@ export default function FridgeRepairBhopalLP() {
               Bhopal mein ghar ghar jaake fridge repair karte hain. Samsung, LG, Whirlpool — sab brands mein certified. Koi surprise bill nahi.
             </p>
             <div className="grid grid-cols-2 gap-3">
-              {['GST invoice dete hain', '30-day warranty', 'Original spare parts', 'Transparent pricing'].map((item) => (
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* {['GST invoice dete hain', '30-day warranty', 'Original spare parts', 'Transparent pricing'].map((item) => ( */}
+              {['Proper bill dete hain', '30-day warranty', 'Original spare parts', 'Transparent pricing'].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-sm text-gray-700">
                   <span className="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
                   {item}

@@ -6,7 +6,9 @@ export const metadata = {
   },
   title: 'HomeRepairPro — Ghar Ki Har Repair, Ek Call Mein | +91 88895 39174',
   description:
-    'Professional home appliance repair in Indore, Bhopal & 8 cities. AC, Washing Machine, Refrigerator, Geyser repair. Same day service, starting ₹350. GST & MSME registered.',
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // 'Professional home appliance repair in Indore, Bhopal & 8 cities. AC, Washing Machine, Refrigerator, Geyser repair. Same day service, starting ₹350. GST & MSME registered.',
+    'Professional home appliance repair in Indore, Bhopal & 8 cities. AC, Washing Machine, Refrigerator, Geyser repair. Same day service, starting ₹350.',
   keywords: 'home appliance repair, AC repair Indore, washing machine repair Bhopal, refrigerator repair, geyser repair',
   metadataBase: new URL('https://homerepairpro.in'),
   openGraph: {

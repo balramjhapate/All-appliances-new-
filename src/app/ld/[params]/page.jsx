@@ -33,7 +33,9 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${service.name} in ${city.name} — Same Day ₹350 | HomeRepairPro`,
-    description: `${service.name} in ${city.name}. Call now: +91 88895 39174. Same day, verified technician, starting ₹${service.price}. GST registered.`,
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // description: `${service.name} in ${city.name}. Call now: +91 88895 39174. Same day, verified technician, starting ₹${service.price}. GST registered.`,
+    description: `${service.name} in ${city.name}. Call now: +91 88895 39174. Same day, verified technician, starting ₹${service.price}.`,
     robots: 'noindex, nofollow',
   };
 }
@@ -47,7 +49,9 @@ export default async function LandingPage({ params }) {
 
   const reviews = [
     { name: 'Rajesh K.', city: city.name, text: `Best ${service.name} service in ${city.name}! Same day mein aa gaye, kaam achha kiya.`, rating: 5 },
-    { name: 'Sunita M.', city: city.name, text: 'Bahut professional service. GST invoice mili, price reasonable tha. Recommended!', rating: 5 },
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // { name: 'Sunita M.', city: city.name, text: 'Bahut professional service. GST invoice mili, price reasonable tha. Recommended!', rating: 5 },
+    { name: 'Sunita M.', city: city.name, text: 'Bahut professional service. Price reasonable tha. Recommended!', rating: 5 },
     { name: 'Anil S.', city: city.name, text: '30 minute mein technician aa gaya. AC ek ghante mein theek. Happy customer!', rating: 5 },
   ];
 
@@ -96,7 +100,8 @@ export default async function LandingPage({ params }) {
               '✓ Same Day Service — 30 Min Response',
               '✓ Verified & Trained Technician',
               `✓ Starting ₹${service.price} — No Hidden Charges`,
-              '✓ GST & MSME Registered',
+              // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+              // '✓ GST & MSME Registered',
               '✓ 30-Day Service Warranty',
             ].map((item) => (
               <li key={item} className="flex gap-2 text-sm font-medium text-gray-700">

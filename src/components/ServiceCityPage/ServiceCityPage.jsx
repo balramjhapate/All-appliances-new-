@@ -126,7 +126,9 @@ export default function ServiceCityPage({ service, city }) {
 
           {/* subtext */}
           <p className="text-white/70 text-sm md:text-base mb-6 max-w-xl leading-relaxed">
-            Certified technicians at your door in 30–60 mins &mdash; Same day, GST invoice, 30-day warranty.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* Certified technicians at your door in 30–60 mins &mdash; Same day, GST invoice, 30-day warranty. */}
+            Certified technicians at your door in 30–60 mins &mdash; Same day, 30-day warranty.
           </p>
 
           {/* inline stats */}
@@ -301,7 +303,9 @@ export default function ServiceCityPage({ service, city }) {
               Hum same day service guarantee karte hain. Subah call karo, dopahar tak technician aapke ghar pe hoga. Emergency service bhi available hai — Sunday aur holidays pe bhi.
             </p>
             <p>
-              Har {service.name} ke baad proper GST invoice milti hai. Pricing transparent hai — koi hidden charges nahi. Service starting ₹{service.price} se, aur repair start se pehle complete estimate dete hain.
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* Har {service.name} ke baad proper GST invoice milti hai. Pricing transparent hai — koi hidden charges nahi. Service starting ₹{service.price} se, aur repair start se pehle complete estimate dete hain. */}
+              Har {service.name} ke baad proper bill/receipt milti hai. Pricing transparent hai — koi hidden charges nahi. Service starting ₹{service.price} se, aur repair start se pehle complete estimate dete hain.
             </p>
           </div>
         </div>

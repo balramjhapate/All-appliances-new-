@@ -76,8 +76,11 @@ export default function Home() {
                   step: '03', icon: '✅',
                   iconBg: 'bg-[#25D366]', shadow: 'shadow-green-200',
                   title: 'Repair + Warranty',
-                  titleFull: 'Repair + GST Invoice',
-                  desc: 'Problem fix, GST invoice milegi. 30-day warranty — same issue aaye toh free repair.',
+                  // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+                  // titleFull: 'Repair + GST Invoice',
+                  // desc: 'Problem fix, GST invoice milegi. 30-day warranty — same issue aaye toh free repair.',
+                  titleFull: 'Repair + Warranty',
+                  desc: 'Problem fix, proper bill milegi. 30-day warranty — same issue aaye toh free repair.',
                 },
               ].map((item) => (
                 <StaggerItem key={item.step} className="relative flex flex-col items-center text-center">
@@ -216,7 +219,7 @@ export default function Home() {
               <div className="space-y-2.5 sm:space-y-4 mb-4 sm:mb-8">
                 {[
                   { icon: '⚡', title: '30-60 Min Response Time', desc: 'Call karo — certified technician ghar aata hai', mobileShow: true },
-                  { icon: '💰', title: 'Starting ₹350 — No Hidden Charges', desc: 'GST invoice, transparent pricing guarantee', mobileShow: true },
+                  { icon: '💰', title: 'Starting ₹350 — No Hidden Charges', desc: 'Transparent pricing, proper bill/receipt guarantee', mobileShow: true },
                   { icon: '🛡️', title: '30-Day Free Repair Warranty', desc: 'Same problem dobara aaye — free fix guaranteed', mobileShow: false },
                   { icon: '✅', title: 'Verified Technicians', desc: 'Trained, experienced professionals only', mobileShow: false },
                 ].map((item) => (
@@ -283,7 +286,9 @@ export default function Home() {
         <FadeUp className="relative z-10 max-w-2xl mx-auto px-3 sm:px-4">
           <p className="text-white font-black text-xl sm:text-2xl md:text-3xl mb-1">Aaj Repair Book Karein</p>
           <p className="text-orange-100 text-xs sm:text-sm mb-4 sm:mb-5">
-            AC · Fridge · Washing Machine · Geyser · Starting ₹350 · GST Invoice · 30-Day Warranty
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* AC · Fridge · Washing Machine · Geyser · Starting ₹350 · GST Invoice · 30-Day Warranty */}
+            AC · Fridge · Washing Machine · Geyser · Starting ₹350 · 30-Day Warranty
           </p>
           <div className="flex flex-row sm:flex-row items-center justify-center gap-2 sm:gap-3">
             <a

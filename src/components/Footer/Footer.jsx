@@ -157,7 +157,9 @@ export default function Footer() {
 
               <div className="flex-1 min-w-0">
                 <p className="text-[10px] sm:text-xs leading-4 sm:leading-5 text-white/90 mb-2 sm:mb-3">
-                  Ghar Ki Har Repair — Ek Call Mein. Verified technicians, same day service, GST &amp; MSME registered.
+                  {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+                  {/* Ghar Ki Har Repair — Ek Call Mein. Verified technicians, same day service, GST &amp; MSME registered. */}
+                  Ghar Ki Har Repair — Ek Call Mein. Verified technicians, same day service.
                 </p>
                 <div className="flex gap-2">
                   <a href="https://www.facebook.com/homerepairproo" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" style={{ backgroundColor: '#1877F2' }}>
@@ -226,9 +228,10 @@ export default function Footer() {
             <Link href="/contact" className="hover:underline">Contact</Link>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto px-4 mt-1 text-center text-[10px] text-white/50">
+        {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+        {/* <div className="max-w-6xl mx-auto px-4 mt-1 text-center text-[10px] text-white/50">
           GST: 23DNCPG4775E14H · MSME: UDYAM-MP-10-0042011
-        </div>
+        </div> */}
       </div>
     </footer>
   );

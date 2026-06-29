@@ -27,9 +27,11 @@ export default function CityLandingPage({ city }) {
       q: `Kya ${city.name} mein sab brands repair karte ho?`,
       a: `Haan! ${city.name} mein LG, Samsung, Whirlpool, Voltas, Daikin, Godrej, Haier, IFB, Bosch, Bajaj, Havells aur sab major brands repair karte hain.`,
     },
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // { q: `Kya ${city.name} mein GST invoice milti hai?`, a: `Haan, hum GST registered business hain. ${city.name} mein har service pe proper GST invoice milti hai. 30-day warranty bhi milti hai.` },
     {
-      q: `Kya ${city.name} mein GST invoice milti hai?`,
-      a: `Haan, hum GST registered business hain. ${city.name} mein har service pe proper GST invoice milti hai. 30-day warranty bhi milti hai.`,
+      q: `Kya ${city.name} mein proper bill milta hai?`,
+      a: `Haan, ${city.name} mein har service ke baad proper bill/receipt milti hai. 30-day warranty bhi milti hai.`,
     },
   ];
 
@@ -64,7 +66,9 @@ export default function CityLandingPage({ city }) {
           </h1>
 
           <p className="text-white/70 text-sm md:text-base mb-6 max-w-xl leading-relaxed">
-            AC • Washing Machine • Fridge • Geyser • Microwave • RO — sab ek jagah. Verified technicians, starting ₹350, GST invoice, 30-day warranty.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* AC • Washing Machine • Fridge • Geyser • Microwave • RO — sab ek jagah. Verified technicians, starting ₹350, GST invoice, 30-day warranty. */}
+            AC • Washing Machine • Fridge • Geyser • Microwave • RO — sab ek jagah. Verified technicians, starting ₹350, 30-day warranty.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">

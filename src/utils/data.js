@@ -17,7 +17,9 @@ export const services = [
         name: 'AC Basic Service',
         price: '350',
         popular: false,
-        features: ['Filter cleaning', 'Water wash', 'Cooling check', 'GST invoice included'],
+        // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+        // features: ['Filter cleaning', 'Water wash', 'Cooling check', 'GST invoice included'],
+        features: ['Filter cleaning', 'Water wash', 'Cooling check', 'Bill/receipt included'],
       },
       {
         name: 'Indoor + Outdoor Jet Wash',
@@ -29,7 +31,9 @@ export const services = [
         name: 'Gas Refill',
         price: '999',
         popular: false,
-        features: ['Leakage testing', 'Pure refrigerant gas', 'Optimal cooling setup', 'GST invoice included'],
+        // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+        // features: ['Leakage testing', 'Pure refrigerant gas', 'Optimal cooling setup', 'GST invoice included'],
+        features: ['Leakage testing', 'Pure refrigerant gas', 'Optimal cooling setup', 'Bill/receipt included'],
       },
     ],
   },
@@ -148,7 +152,9 @@ export const reviews = [
     city: 'Vijay Nagar, Indore',
     service: 'AC Repair',
     rating: 5,
-    text: 'Voltas AC mein cooling bilkul band ho gayi thi garmi mein. Call kiya aur 45 minute mein technician aa gaya. Gas refill + service karke ₹799 liye — bilkul fair price. GST invoice bhi mili. Highly recommend!',
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // text: 'Voltas AC mein cooling bilkul band ho gayi thi garmi mein. Call kiya aur 45 minute mein technician aa gaya. Gas refill + service karke ₹799 liye — bilkul fair price. GST invoice bhi mili. Highly recommend!',
+    text: 'Voltas AC mein cooling bilkul band ho gayi thi garmi mein. Call kiya aur 45 minute mein technician aa gaya. Gas refill + service karke ₹799 liye — bilkul fair price. Highly recommend!',
     avatar: 'R',
   },
   {
@@ -178,9 +184,11 @@ export const faqs = [
     q: 'Kya service charges fixed hain?',
     a: 'Visiting charge ₹99 hai jo service pe adjust ho jaata hai. AC, washing machine, refrigerator, geyser, microwave — sabki service starting ₹350 se shuru hoti hai. Parts alag se charge hote hain.',
   },
+  // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+  // { q: 'Kya aap GST receipt dete ho?', a: 'Haan, hum GST registered business hain. Har service pe proper GST invoice milti hai jo aap tax purposes ke liye use kar sakte ho.' },
   {
-    q: 'Kya aap GST receipt dete ho?',
-    a: 'Haan, hum GST registered business hain. Har service pe proper GST invoice milti hai jo aap tax purposes ke liye use kar sakte ho.',
+    q: 'Kya aap proper bill dete ho?',
+    a: 'Haan, har service ke baad proper bill/receipt milti hai.',
   },
   {
     q: 'Kya service ke baad koi warranty milti hai?',

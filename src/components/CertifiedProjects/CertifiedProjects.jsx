@@ -73,7 +73,9 @@ export default function CertifiedProjects() {
           </h2>
           <div className="w-14 h-1 bg-[#F97316] rounded-full mx-auto mb-3" />
           <p className="text-gray-500 text-sm">
-            GST invoice ke saath completed — 100% verified work records
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* GST invoice ke saath completed — 100% verified work records */}
+            Proper bill issued for every project — 100% verified work records
           </p>
         </motion.div>
 
@@ -137,10 +139,12 @@ export default function CertifiedProjects() {
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          🔒 Sabhi projects mein proper{' '}
+          {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+          {/* 🔒 Sabhi projects mein proper{' '}
           <strong className="text-gray-600">GST Tax Invoice</strong> issue ki gayi &nbsp;•&nbsp;
           GSTIN: <strong className="text-gray-600">23DNCPG4775E14H</strong> &nbsp;•&nbsp;
-          MSME: UDYAM-MP-10-0042011
+          MSME: UDYAM-MP-10-0042011 */}
+          🔒 Sabhi projects mein proper bill/receipt issue ki gayi — verified work records
         </motion.p>
       </div>
 

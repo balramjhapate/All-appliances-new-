@@ -35,7 +35,9 @@ export default function RefundPolicyPage() {
         <section>
           <h2 className="text-lg font-bold text-gray-900 mb-2">5. 30-Day Warranty Repairs</h2>
           <p>If the same fault recurs within 30 days of the original repair, we will fix it at no additional charge. This warranty applies to the specific fault that was repaired and does not cover new or unrelated faults, physical damage, or damage from power surges.</p>
-          <p className="mt-2">To claim a warranty repair, contact us with your original booking reference or GST invoice number.</p>
+          {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+          {/* <p className="mt-2">To claim a warranty repair, contact us with your original booking reference or GST invoice number.</p> */}
+          <p className="mt-2">To claim a warranty repair, contact us with your original booking reference or invoice number.</p>
         </section>
 
         <section>
@@ -53,9 +55,14 @@ export default function RefundPolicyPage() {
           <p className="mt-2">We aim to resolve all complaints within <strong>48 hours</strong> of receiving them.</p>
         </section>
 
-        <section>
+        {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+        {/* <section>
           <h2 className="text-lg font-bold text-gray-900 mb-2">8. GST Invoices</h2>
           <p>A GST invoice (GSTIN: 23DNCPG4775E14H) is issued for every completed repair. Please retain your invoice for warranty claims.</p>
+        </section> */}
+        <section>
+          <h2 className="text-lg font-bold text-gray-900 mb-2">8. Service Receipts</h2>
+          <p>A proper bill/receipt is issued for every completed repair. Please retain it for warranty claims.</p>
         </section>
 
       </div>

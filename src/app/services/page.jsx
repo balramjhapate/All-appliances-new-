@@ -58,7 +58,9 @@ export default function ServicesPage() {
             { icon: '✅', text: 'Verified' },
             { icon: '💰', text: '₹350+' },
             { icon: '🛡️', text: '30-Day Warranty' },
-            { icon: '🧾', text: 'GST Invoice' },
+            // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+            // { icon: '🧾', text: 'GST Invoice' },
+            { icon: '🧾', text: 'Proper Bill' },
           ].map((t) => (
             <span key={t.text} className="flex items-center gap-1 sm:gap-1.5 font-medium">
               {t.icon} {t.text}
@@ -168,7 +170,9 @@ export default function ServicesPage() {
 
       <section className="py-8 sm:py-10 bg-[#F97316] text-center px-3">
         <p className="text-white font-bold text-lg sm:text-xl mb-1">Abhi Book Karo — Same Day Service</p>
-        <p className="text-orange-100 text-xs sm:text-sm mb-4 sm:mb-5">Starting ₹350 • 30-day warranty • GST invoice</p>
+        {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+        {/* <p className="text-orange-100 text-xs sm:text-sm mb-4 sm:mb-5">Starting ₹350 • 30-day warranty • GST invoice</p> */}
+        <p className="text-orange-100 text-xs sm:text-sm mb-4 sm:mb-5">Starting ₹350 • 30-day warranty</p>
         <div className="flex flex-row sm:flex-row gap-2 sm:gap-3 justify-center">
           <a
             href="tel:+918889539174"

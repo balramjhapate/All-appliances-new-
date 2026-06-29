@@ -79,7 +79,9 @@ export default function ServicePage({ service }) {
           </h1>
 
           <p className="text-white/70 text-sm md:text-base mb-6 max-w-xl leading-relaxed">
-            {service.desc} — Starting ₹{service.price}. Verified technicians, GST invoice, 30-day warranty.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* {service.desc} — Starting ₹{service.price}. Verified technicians, GST invoice, 30-day warranty. */}
+            {service.desc} — Starting ₹{service.price}. Verified technicians, 30-day warranty.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
@@ -268,7 +270,9 @@ export default function ServicePage({ service }) {
               Hamare sab technicians trained aur background-verified hain. Same day service guarantee — subah call karo, dopahar tak technician ghar pe. Emergency service bhi available hai.
             </p>
             <p>
-              Transparent pricing — service shuru karne se pehle poora estimate de dete hain. Koi hidden charges nahi. Har kaam pe proper GST invoice aur 30-day warranty milti hai.
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* Transparent pricing — service shuru karne se pehle poora estimate de dete hain. Koi hidden charges nahi. Har kaam pe proper GST invoice aur 30-day warranty milti hai. */}
+              Transparent pricing — service shuru karne se pehle poora estimate de dete hain. Koi hidden charges nahi. Har kaam pe proper bill/receipt aur 30-day warranty milti hai.
             </p>
           </div>
         </div>

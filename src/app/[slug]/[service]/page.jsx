@@ -33,7 +33,9 @@ export default async function ServiceCityPage({ params }) {
 
   const meta = getServiceCityMeta(citySlug, serviceSlug);
   const faqs = getServiceCityFaqs(citySlug, serviceSlug);
-  const intro = cityData.intros?.[serviceSlug] ?? `${cityData.name} mein ${serviceData.name} ke liye hum 60 minute mein certified technician bhejte hain. ₹350 se shuru, 30-day warranty, GST invoice guaranteed.`;
+  // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+  // const intro = cityData.intros?.[serviceSlug] ?? `${cityData.name} mein ${serviceData.name} ke liye hum 60 minute mein certified technician bhejte hain. ₹350 se shuru, 30-day warranty, GST invoice guaranteed.`;
+  const intro = cityData.intros?.[serviceSlug] ?? `${cityData.name} mein ${serviceData.name} ke liye hum 60 minute mein certified technician bhejte hain. ₹350 se shuru, 30-day warranty guaranteed.`;
   const reviews = (cityData.reviews ?? []).filter(
     (r) => !r.service || r.service === serviceData.name || r.service === serviceData.fullName
   );
@@ -146,7 +148,8 @@ export default async function ServiceCityPage({ params }) {
             <span>✅ 60 Min Doorstep</span>
             <span>✅ ₹350 se Shuru</span>
             <span>✅ 30-Day Warranty</span>
-            <span>✅ GST Invoice</span>
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* <span>✅ GST Invoice</span> */}
           </div>
         </div>
       </section>
@@ -158,7 +161,9 @@ export default async function ServiceCityPage({ params }) {
           <p className="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">Quick Answer</p>
           <p className="text-sm text-amber-900 leading-relaxed">
             <strong>{serviceData.fullName} in {cityData.name}</strong> starts at <strong>₹350</strong>.
-            Technician arrives in <strong>60 minutes</strong>. <strong>30-day warranty</strong> and GST invoice on every repair.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* Technician arrives in <strong>60 minutes</strong>. <strong>30-day warranty</strong> and GST invoice on every repair. */}
+            Technician arrives in <strong>60 minutes</strong>. <strong>30-day warranty</strong> on every repair.
             Call or WhatsApp: <strong>+91 8889539174</strong>.
           </p>
         </section>
@@ -187,7 +192,9 @@ export default async function ServiceCityPage({ params }) {
             {[
               { icon: '🏆', label: 'Experienced', sub: 'Technicians' },
               { icon: '✅', label: 'Verified', sub: 'Technicians' },
-              { icon: '🧾', label: 'GST Invoice', sub: 'Har service pe' },
+              // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+              // { icon: '🧾', label: 'GST Invoice', sub: 'Har service pe' },
+              { icon: '🧾', label: 'Proper Bill', sub: 'Har service pe' },
               { icon: '🛡️', label: '30-Day Warranty', sub: 'Repair guarantee' },
             ].map((u) => (
               <div key={u.label} className="text-center bg-white rounded-xl p-3 shadow-sm">
@@ -235,7 +242,9 @@ export default async function ServiceCityPage({ params }) {
             {[
               { step: '1', title: 'Call / WhatsApp', desc: '8889539174 pe call karo ya WhatsApp karo — pehle cost batate hain.' },
               { step: '2', title: '60 Min Technician', desc: `${cityData.name} mein 60 minute mein certified technician aapke ghar pe.` },
-              { step: '3', title: 'Repair + Warranty', desc: 'Problem fix — GST invoice + 30-day warranty saath mein.' },
+              // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+              // { step: '3', title: 'Repair + Warranty', desc: 'Problem fix — GST invoice + 30-day warranty saath mein.' },
+              { step: '3', title: 'Repair + Warranty', desc: 'Problem fix — proper bill + 30-day warranty saath mein.' },
             ].map((s) => (
               <div key={s.step} className="flex gap-4 items-start bg-white border border-gray-100 rounded-xl p-4 shadow-sm">
                 <div className="w-9 h-9 rounded-full bg-[#1B4FD8] text-white font-black text-base flex items-center justify-center flex-shrink-0">{s.step}</div>

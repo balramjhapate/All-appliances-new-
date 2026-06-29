@@ -100,7 +100,9 @@ export default async function AreaPage({ params }) {
             {serviceData.name} in {areaName}, {cityData.name}
           </h1>
           <p className="text-blue-100 text-base mb-5">
-            Technician reaches {areaName} in 60 minutes. ₹350 se shuru, 30-day warranty, GST invoice.
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* Technician reaches {areaName} in 60 minutes. ₹350 se shuru, 30-day warranty, GST invoice. */}
+            Technician reaches {areaName} in 60 minutes. ₹350 se shuru, 30-day warranty.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="tel:8889539174"
@@ -123,7 +125,9 @@ export default async function AreaPage({ params }) {
             <p className="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">Quick Answer</p>
             <p className="text-sm text-amber-900 leading-relaxed">
               <strong>{serviceData.name} in {areaName}, {cityData.name}</strong> starts at <strong>₹350</strong>.
-              Technician arrives in <strong>60 minutes</strong>. <strong>30-day warranty</strong> and GST invoice on every repair.
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* Technician arrives in <strong>60 minutes</strong>. <strong>30-day warranty</strong> and GST invoice on every repair. */}
+              Technician arrives in <strong>60 minutes</strong>. <strong>30-day warranty</strong> on every repair.
               Call or WhatsApp: <strong>+91 8889539174</strong>.
             </p>
           </section>
@@ -142,7 +146,9 @@ export default async function AreaPage({ params }) {
             <li>✅ Technician reaches {areaName} in under 60 minutes</li>
             <li>✅ Trained, verified technicians</li>
             <li>✅ ₹350 starting price — transparent, no hidden charges</li>
-            <li>✅ 30-day repair warranty + GST invoice</li>
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* <li>✅ 30-day repair warranty + GST invoice</li> */}
+            <li>✅ 30-day repair warranty + proper bill/receipt</li>
             <li>✅ All brands: {serviceData.brands.slice(0,5).join(', ')} & more</li>
           </ul>
         </section>

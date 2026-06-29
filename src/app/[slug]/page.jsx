@@ -66,7 +66,9 @@ export async function generateMetadata({ params }) {
     const { service, city } = parsed;
     return {
       title: `${service.name} in ${city.name} — Same Day Service | HomeRepairPro`,
-      description: `Best ${service.name} in ${city.name}. Call +91 88895 39174. Same day, verified technicians, starting ₹${service.price}. GST invoice, 30-day warranty.`,
+      // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+      // description: `Best ${service.name} in ${city.name}. Call +91 88895 39174. Same day, verified technicians, starting ₹${service.price}. GST invoice, 30-day warranty.`,
+      description: `Best ${service.name} in ${city.name}. Call +91 88895 39174. Same day, verified technicians, starting ₹${service.price}. 30-day warranty.`,
       keywords: `${service.name} ${city.name}, ${service.slug} ${city.slug}, ${service.slug} near me ${city.name}, home appliance repair ${city.name}`,
       alternates: { canonical: `https://homerepairpro.in/${slug}` },
       openGraph: {
@@ -81,7 +83,9 @@ export async function generateMetadata({ params }) {
     const isServed = SEO_CITIES[city.slug]?.served === true;
     return {
       title: `Home Appliance Repair in ${city.name} — Same Day Service | HomeRepairPro`,
-      description: `AC repair, washing machine repair, refrigerator repair, geyser & more in ${city.name}. Same day service, starting ₹350. Verified technicians, GST invoice, 30-day warranty. Call +91 88895 39174.`,
+      // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+      // description: `AC repair, washing machine repair, refrigerator repair, geyser & more in ${city.name}. Same day service, starting ₹350. Verified technicians, GST invoice, 30-day warranty. Call +91 88895 39174.`,
+      description: `AC repair, washing machine repair, refrigerator repair, geyser & more in ${city.name}. Same day service, starting ₹350. Verified technicians, 30-day warranty. Call +91 88895 39174.`,
       keywords: `appliance repair ${city.name}, AC repair ${city.name}, washing machine repair ${city.name}, refrigerator repair ${city.name}, home repair ${city.name}`,
       alternates: { canonical: `https://homerepairpro.in/${city.slug}` },
       ...(isServed ? {} : { robots: { index: false, follow: true } }),
@@ -111,7 +115,9 @@ export async function generateMetadata({ params }) {
   const cityNames = ['Bhopal', 'Indore', 'Ujjain', 'Jabalpur'].join(', ');
   return {
     title: `${service.name} — Same Day Service, Starting ₹${service.price} | HomeRepairPro`,
-    description: `Expert ${service.name} starting ₹${service.price}. Same day service in ${cityNames} & all MP cities. Verified technicians, GST invoice, 30-day warranty. Call +91 88895 39174.`,
+    // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+    // description: `Expert ${service.name} starting ₹${service.price}. Same day service in ${cityNames} & all MP cities. Verified technicians, GST invoice, 30-day warranty. Call +91 88895 39174.`,
+    description: `Expert ${service.name} starting ₹${service.price}. Same day service in ${cityNames} & all MP cities. Verified technicians, 30-day warranty. Call +91 88895 39174.`,
     keywords: `${service.name}, ${service.slug} near me, ${service.slug} Bhopal, ${service.slug} Indore, home appliance repair MP`,
     alternates: { canonical: `https://homerepairpro.in/${service.slug}` },
     openGraph: {

@@ -23,7 +23,9 @@ export default function TermsPage() {
             <li>Final price communicated before work begins — no hidden charges</li>
             <li>Parts cost communicated separately with owner approval</li>
             <li>Payment accepted: Cash, UPI (GPay, PhonePe, Paytm)</li>
-            <li>GST invoice provided for all services</li>
+            {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+            {/* <li>GST invoice provided for all services</li> */}
+            <li>Proper bill/receipt provided for all services</li>
           </ul>
         </section>
 

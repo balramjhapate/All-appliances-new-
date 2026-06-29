@@ -65,7 +65,9 @@ export default function ServiceCoverage() {
           {[
             { label: 'Same Day Service', icon: '⚡' },
             { label: '30-Day Warranty',  icon: '🛡️' },
-            { label: 'GST Invoice',      icon: '🧾' },
+            // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+            // { label: 'GST Invoice',      icon: '🧾' },
+            { label: 'Proper Bill',      icon: '🧾' },
           ].map((pill) => (
             <div key={pill.label} className="flex items-center gap-1.5 bg-white border border-gray-200 rounded-full px-4 py-2 text-xs md:text-sm font-semibold text-gray-700 shadow-sm">
               <span>{pill.icon}</span>
