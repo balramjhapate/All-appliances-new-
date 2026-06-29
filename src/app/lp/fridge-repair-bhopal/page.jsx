@@ -35,7 +35,9 @@ const STATS = [
   { num: '₹350', label: 'Starting Price', sub: 'No hidden charges' },
   { num: '60 Min', label: 'Response', sub: 'Same day guaranteed' },
   { num: '30-Day', label: 'Warranty', sub: 'Free re-service' },
-  { num: 'GST', label: 'Invoice', sub: 'Every repair' },
+  // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+  // { num: 'GST', label: 'Invoice', sub: 'Every repair' },
+  { num: 'All Brands', label: 'Covered', sub: 'LG, Samsung & more' },
 ];
 
 const PROBLEMS = [

@@ -58,12 +58,17 @@ export default function AboutSection() {
                 </p>
               </div>
 
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* <div className="bg-white rounded-xl p-3 shadow-sm text-center">
+                <h4 className="text-lg md:text-2xl font-black text-[#F97316]">GST</h4>
+                <p className="text-[11px] md:text-sm text-gray-500">Invoice</p>
+              </div> */}
               <div className="bg-white rounded-xl p-3 shadow-sm text-center">
                 <h4 className="text-lg md:text-2xl font-black text-[#F97316]">
-                  GST
+                  All Brands
                 </h4>
                 <p className="text-[11px] md:text-sm text-gray-500">
-                  Invoice
+                  Covered
                 </p>
               </div>
 
@@ -101,14 +106,17 @@ export default function AboutSection() {
   className="rounded-3xl shadow-xl w-full max-h-[320px] object-cover"
 />
 
-              {/* Floating Experience Card */}
+              {/* GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam */}
+              {/* <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md shadow-lg rounded-2xl px-4 py-3">
+                <h4 className="text-xl font-black text-[#F97316]">GST</h4>
+                <p className="text-xs text-gray-500">Invoice Included</p>
+              </div> */}
               <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md shadow-lg rounded-2xl px-4 py-3">
                 <h4 className="text-xl font-black text-[#F97316]">
-                  GST
+                  30-Day
                 </h4>
-
                 <p className="text-xs text-gray-500">
-                  Invoice Included
+                  Warranty
                 </p>
               </div>
 

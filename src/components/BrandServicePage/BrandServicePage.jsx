@@ -199,7 +199,9 @@ export default function BrandServicePage({ service, brand }) {
               { val: 'Same Day',           label: 'Service Guaranteed' },
               { val: 'Verified',           label: 'Technicians Only'   },
               { val: `₹${service.price}`, label: 'Starting Price'     },
-              { val: 'GST',               label: 'Invoice Included'    },
+              // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+              // { val: 'GST',               label: 'Invoice Included'    },
+              { val: 'All Brands',          label: 'Covered'             },
               { val: '30 Days',           label: 'Repair Warranty'     },
             ].map(({ val, label }) => (
               <div key={label} className="bg-white/10 border border-white/20 rounded-xl px-3 py-2 sm:px-5 sm:py-2.5 text-center min-w-[75px] sm:min-w-[100px]">

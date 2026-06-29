@@ -194,7 +194,9 @@ export default function ServiceCityPage({ service, city }) {
               { val: 'Same Day',        label: 'Service Guaranteed' },
               { val: 'Verified',        label: 'Technicians Only'   },
               { val: `₹${service.price}`, label: 'Starting Price'  },
-              { val: 'GST',             label: 'Invoice Included'   },
+              // GST_MSME_DISABLED — re-enable only after HomeRepairPro has its OWN valid GST/Udyam
+              // { val: 'GST',             label: 'Invoice Included'   },
+              { val: 'All Brands',      label: 'Covered'            },
               { val: '30 Days',         label: 'Repair Warranty'    },
             ].map(({ val, label }) => (
               <div
